@@ -58,7 +58,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-          --application-name sharkle-code-deploy \
+          --application-name sharkle-deploy \
           --deployment-group-name sharkle-deploy-group \
           --deployment-config-name CodeDeployDefault.OneAtATime \
           --file-exists-behavior OVERWRITE \
