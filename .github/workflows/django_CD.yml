@@ -33,10 +33,10 @@ jobs:
       - name: Copy src folder
         run: cp -r ./sharkle/ ./deploy/
 
-      - name: Copy appspec.yml
-        run: |
-          cat ./scripts/appspec.yml
-          cp ./scripts/appspec.yml ./deploy/
+#      - name: Copy appspec.yml
+ #       run: |
+  #        cat ./scripts/appspec.yml
+   #       cp ./scripts/appspec.yml ./deploy/
 
       - name: Copy start.sh
         run: cp ./scripts/start.sh ./deploy/
