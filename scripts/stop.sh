@@ -6,10 +6,3 @@ LOG_DIR=/home/ec2-user/sharkle_uwsgi.log
 
 echo "[Deploy] : Stop Nginx"
 sudo systemctl stop nginx
-
-echo "[Deploy] : Stop Uwsgi"
-uwsgi --stop /tmp/sharkle_uwsgi.pid
-rm $LOG_DIR
-
-echo "[Deploy] : Deactivate virtual env"
-pyenv deactivate
