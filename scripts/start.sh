@@ -9,6 +9,8 @@ pyenv activate $VIRTUAL_ENV
 
 cd $WORKING_DIR
 
+ls
+
 echo "[Deploy] : Migrate"
 python managy.py makemigrations
 python managy.py migrate
