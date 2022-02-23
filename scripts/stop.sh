@@ -6,3 +6,6 @@ LOG_DIR=/home/ec2-user/sharkle_uwsgi.log
 
 echo "[Deploy] : Stop Nginx"
 sudo systemctl stop nginx
+
+echo "[Deploy] : Reset Log"
+rm $LOG_DIR
