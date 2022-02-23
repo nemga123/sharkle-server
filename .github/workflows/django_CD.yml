@@ -34,7 +34,9 @@ jobs:
         run: cp -r ./sharkle/ ./deploy/
 
       - name: Copy appspec.yml
-        run: cp ./scripts/appspec.yml ./deploy/
+        run: |
+          cat ./scripts/appspec.yml
+          cp ./scripts/appspec.yml ./deploy/
 
       - name: Copy start.sh
         run: cp ./scripts/start.sh ./deploy/
